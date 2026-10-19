@@ -2,7 +2,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Product } from '../classes/iProducts';
 import { Observable } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { catchError, map, retry } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
@@ -21,5 +21,10 @@ export class ProductHttpHandleErrorService {
     handleError(error: HttpErrorResponse) {
         return throwError(() => new Error(error.message));
     }
-
+    getProductById(id: number): Observable<Product | undefined> {
+        return this.getProductList().pipe(
+                map((products: Product[]) => products.find(p => p.id === id)),
+                catchError(this.handleError)
+                );
+  }
 }

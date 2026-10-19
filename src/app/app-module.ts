@@ -1,5 +1,7 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule];
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { ContactComponent } from './component/component';
@@ -8,7 +10,6 @@ import { BindingPropertyComponent } from './binding-property-component/binding-p
 import { BindingClassComponent } from './binding-class-component/binding-class-component';
 import { BindingStyleComponent } from './binding-style-component/binding-style-component';
 import { BindingEventComponent } from './binding-event-component/binding-event-component';
-import { FormsModule } from '@angular/forms';
 import { BindingTwoWayComponent } from './binding-two-way-component/binding-two-way-component';
 import { ProductListComponent } from './product-list-component/product-list-component';
 import { ProductDropdownListComponent } from './product-dropdown-list-component/product-dropdown-list-component';
@@ -19,6 +20,24 @@ import { ProductHttpHandleErrorServiceComponent } from './product-http-handle-er
 import { Exercise13Component } from './exercise13/exercise13';
 import { Exercise14Component } from './exercise14/exercise14';
 import { Exercise18Component } from './exercise18/exercise18';
+import { ProductListAdvancedComponent } from './product-list-advanced-component/product-list-advanced-component';
+import { ProductDetailComponent } from './product-detail-component/product-detail-component';
+import { ProductListSearchComponent } from './product-list-search-component/product-list-search-component';
+import { PageNotFoundComponent } from './page-not-found-component/page-not-found-component';
+import { CourseRegistrationComponent } from './course-registration-component/course-registration-component';
+import { LoginComponent } from './login-component/login-component';
+import { FakeProductComponent } from './fake-product-component/fake-product-component';
+import { FakeProductComponent2 } from './fake-product-component2/fake-product-component2';
+import { BooksComponent } from './books-component/books-component';
+import { BookDetailComponent } from './book-detail-component/book-detail-component';
+import { BookNewComponent } from './book-new-component/book-new-component';
+import { BookUpdateComponent } from './book-update-component/book-update-component';
+import { BookDeleteComponent } from './book-delete-component/book-delete-component';
+import { FashionComponent } from './fashion-component/fashion-component';
+import { FashionDetailComponent } from './fashion-detail-component/fashion-detail-component';
+import { FashionNewComponent } from './fashion-new-component/fashion-new-component';
+import { FashionUpdateComponent } from './fashion-update-component/fashion-update-component';
+import { FashionDeleteComponent } from './fashion-delete-component/fashion-delete-component';
 
 @NgModule({
   declarations: [
@@ -38,6 +57,24 @@ import { Exercise18Component } from './exercise18/exercise18';
     Exercise13Component,
     Exercise14Component,
     Exercise18Component,
+    ProductListAdvancedComponent,
+    ProductDetailComponent,
+    ProductListSearchComponent,
+    PageNotFoundComponent,
+    CourseRegistrationComponent,
+    LoginComponent,
+    FakeProductComponent,
+    FakeProductComponent2,
+    BooksComponent,
+    BookDetailComponent,
+    BookNewComponent,
+    BookUpdateComponent,
+    BookDeleteComponent,
+    FashionComponent,
+    FashionDetailComponent,
+    FashionNewComponent,
+    FashionUpdateComponent,
+    FashionDeleteComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners(), provideHttpClient(withInterceptorsFromDi())],

@@ -1,10 +1,38 @@
 [
-      { "id": 1, "name": "Coca", "price": 10.99, "image_link": "https://www.coca-cola.com/content/dam/onexp/vn/vi/brands/coca-cola/vn-coca-cola.png" },
-      { "id": 2, "name": "Pepsi", "price": 19.99, "image_link": "https://bizweb.dktcdn.net/thumb/1024x1024/100/561/131/products/nuoc-ngot-pepsi-cola-390ml-3.webp?v=1756282253327" },
-      {"id": 3, "name": "Redbull", "price": 5.99, "image_link": "https://cdn.tgdd.vn/Products/Images/3226/76513/bhx/nuoc-tang-luc-redbull-lon-250ml-15112018162747.JPG" },
-      { "id": 4, "name": "Aquafina", "price": 15.49, "image_link": "https://sonhawater.com/wp-content/uploads/2019/10/aquafina-15-lit.jpg" },
-      { "id": 5, "name": "Lavie", "price": 8.75, "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf4fJmFTLdrn6Z6wUdf0Wnrnwk9p4w76Wm4YKVOeTn-1CatI9QIvi6Ljk2&s=10" },
-      { "id": 6, "name": "Bia Sai Gon", "price": 9, "image_link": "https://cdnv2.tgdd.vn/bhx-static/bhx/production/2026/2/image/Products/Images/2282/158346/bhx/bia-sai-gon-lager-lon-330ml_202602231136493971.jpg" },
-      { "id": 7, "name": "Bia Sai Gon", "price": 9, "image_link": "https://cdnv2.tgdd.vn/bhx-static/bhx/production/2026/2/image/Products/Images/2282/158346/bhx/bia-sai-gon-lager-lon-330ml_202602231136493971.jpg" }
-
+  {
+    "id": 1,
+    "name": "Coca",
+    "price": 15,
+    "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-uPKamYgqulaTBoIwft3KpxWZT27fkVtQuJvQen7cUwUGFCRDZtS5sY&s=10"
+  },
+  {
+    "id": 2,
+    "name": "Pepsi",
+    "price": 12,
+    "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSQBIxIYvUNDgQoFz9kSPD7NIF39GJHrTni6jUstI1ew&s=10"
+  },
+  {
+    "id": 3,
+    "name": "Sprite",
+    "price": 10,
+    "image_link": "https://bizweb.dktcdn.net/thumb/1024x1024/100/468/889/products/nuoc-ngot-sprite-huong-chanh-320ml.jpg?v=1668050613287"
+  },
+  {
+    "id": 4,
+    "name": "Fanta",
+    "price": 13,
+    "image_link": "https://t3.ftcdn.net/jpg/04/59/68/76/360_F_459687602_UnQwEflTm1OJqcocV48Ll5zP6hVrPbNc.jpg"
+  },
+{
+    "id": 5,
+    "name": "7up",
+    "price": 11,
+    "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMENikxsG69sVQgLShxUuTyZgwEwXBz1EbpTNKMk_ENIxq5cr4XHMZdIc&s=10"
+  },
+  {
+    "id": 6,
+    "name": "Sting",
+    "price": 16,
+    "image_link": "https://hongphatfood.com/wp-content/uploads/2023/06/Sting-strawberry-can-320ml2.jpg"
+  }
 ]

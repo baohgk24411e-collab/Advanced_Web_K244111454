@@ -1,0 +1,117 @@
+<p>{{ errMessage }}</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><label for="_id">Fashion ID:</label></td>
+      <td>
+        <input
+          type="text"
+          class="form-control"
+          name="_id"
+          id="_id"
+          placeholder="Input ID"
+          [(ngModel)]="fashion._id"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td><label for="style">Fashion Style:</label></td>
+      <td>
+        <input
+          type="text"
+          class="form-control"
+          name="style"
+          id="style"
+          placeholder="Input Style"
+          [(ngModel)]="fashion.style"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td><label for="fashion_subject">Fashion Subject:</label></td>
+      <td>
+        <input
+          type="text"
+          class="form-control"
+          name="fashion_subject"
+          id="fashion_subject"
+          placeholder="Input Subject"
+          [(ngModel)]="fashion.fashion_subject"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td><label for="fashion_detail">Fashion Detail:</label></td>
+      <td>
+        <input
+          type="text"
+          class="form-control"
+          name="fashion_detail"
+          id="fashion_detail"
+          placeholder="Input Detail"
+          [(ngModel)]="fashion.fashion_detail"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td><label for="fashion_image">Fashion Image:</label></td>
+      <td>
+        <input
+          type="file"
+          class="file-input"
+          name="fashion_image"
+          id="fashion_image"
+          accept="image/*"
+          (change)="onFileSelected($event)"
+        />
+      </td>
+    </tr>
+    @if (fashion.fashion_image) {
+      <tr>
+        <td colspan="2">
+          <img
+            [src]="fashion.fashion_image"
+            alt="Fashion preview"
+            width="200"
+          />
+        </td>
+      </tr>
+    }
+    <tr>
+      <td colspan="2">
+        <button type="button" (click)="putFashion()">Submit</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+@if (fashion._id !== null) {
+  <table>
+    <tbody>
+      <tr>
+        <td>Fashion ID:</td>
+        <td>{{ fashion._id }}</td>
+      </tr>
+      <tr>
+        <td>Fashion Subject:</td>
+        <td>{{ fashion.fashion_subject }}</td>
+      </tr>
+      <tr>
+        <td>Fashion Detail:</td>
+        <td>{{ fashion.fashion_detail }}</td>
+      </tr>
+      @if (fashion.fashion_image) {
+        <tr>
+          <td colspan="2">
+            <img
+              [src]="fashion.fashion_image"
+              alt="Fashion"
+              width="200"
+            />
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}
